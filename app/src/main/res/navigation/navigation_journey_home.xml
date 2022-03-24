@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_journey_home"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.journey.ui.home.screen.HomeScreen"
+        android:label="HomeScreen" />
+
+    <action
+        android:id="@+id/action_global_homeScreen"
+        app:destination="@id/homeScreen" />
+
+    <fragment
+        android:id="@+id/settingScreen"
+        android:name="com.example.journey.ui.home.screen.SettingScreen"
+        android:label="SettingScreen" />
+
+    <action
+        android:id="@+id/action_global_settingScreen"
+        app:destination="@id/settingScreen" />
+</navigation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_journey_login"
+    app:startDestination="@id/loginScreen">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.journey.ui.login.screen.LoginScreen"
+        android:label="LoginScreen" />
+
+    <action
+        android:id="@+id/action_global_loginScreen"
+        app:destination="@id/loginScreen" />
+
+    <fragment
+        android:id="@+id/configScreen"
+        android:name="com.example.journey.ui.login.screen.ConfigScreen"
+        android:label="ConfigScreen" />
+
+    <action
+        android:id="@+id/action_global_configScreen"
+        app:destination="@id/configScreen" />
+
+</navigation>

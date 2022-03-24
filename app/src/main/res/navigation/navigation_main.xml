@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_guide_main"
+    app:startDestination="@id/loginJourney">
+
+    <fragment
+        android:id="@+id/loginJourney"
+        android:name="com.example.journey.ui.login.LoginJourney"
+        android:label="LoginJourney" />
+
+    <fragment
+        android:id="@+id/homeJourney"
+        android:name="com.example.journey.ui.home.HomeJourney"
+        android:label="HomeJourney" />
+
+    <action
+        android:id="@+id/action_homeJourney"
+        app:destination="@id/homeJourney" />
+
+    <action
+        android:id="@+id/action_loginJourney"
+        app:destination="@id/loginJourney" />
+</navigation>
